@@ -1,0 +1,14 @@
+Rizky_Sulaeman_D4RPL-1A_KELOMPOK_1
+Perintah github
+git init
+git status
+git add .
+git commit -m "Rizky Sulaeman"
+git remote add origin <alamat>
+jika almat digunakan oleh yang lain git remote remove origin
+git push -u origin master
+
+
+
+
+

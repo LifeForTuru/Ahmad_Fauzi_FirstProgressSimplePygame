@@ -6,7 +6,7 @@ from oop.enemies.mouse import Mouse
 
 
 class Level2(Level):
-    ''' Level 1 - berlatar belakang rerumputan '''
+    ''' Level 2 - berlatar belakang padang pasir '''
 
     def setup(self):
         self.castle = Castle(self.screen)
@@ -14,8 +14,8 @@ class Level2(Level):
 
     def background_sound(self, volume=0.25):
         pygame.mixer.init()
-        pygame.mixer.music.load("resources/audio/moonlight.wav")
-        pygame.mixer.music.play(-1, 0.0)
+        pygame.mixer.music.load("resources/audio/arabian.mp3")
+        pygame.mixer.music.play(-2, 0.0)
         pygame.mixer.music.set_volume(volume)
 
     def tiles(self):

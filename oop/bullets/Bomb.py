@@ -1,14 +1,14 @@
 import pygame
 from oop.bullet import Bullet
 
-class Arrow(Bullet):
+class Bomb(Bullet):
 	max_bullet = 5000000000
 
 	def __init__(self):
-		Bullet.__init__(self, Arrow.max_bullet)
+		Bullet.__init__(self,Bomb.max_bullet)
 
 	def tiles(self):
-		return pygame.image.load('resources/images/bullet.png')
+		return pygame.image.load('resources/images/bomb.png')
 
 	def shoot_sound(self):
 		tmp = pygame.mixer.Sound("resources/audio/shoot.wav")

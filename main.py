@@ -1,6 +1,6 @@
 import pygame
-from oop.bullets.arrow import Arrow
-from oop.bullets.fire import Fire
+from oop.bullets.Bomb import Bomb
+from oop.bullets.Mine import Mine
 from oop.control import GameController
 from oop.scene import Scene
 from oop.levels.level1 import Level1
@@ -20,10 +20,23 @@ scene.setup_level(
   Level4,
   Level5,
 )
-
+#===============================#
+#Pilih Map Sesuai Anda Inginkan
+# 1.Default
+# 2.Padang Pasir
+# 3.Dalam Laut
+# 4.Galaxy
+# 5.Kota
 scene.next_level()
-
-player = Player(scene, Fire())
+scene.next_level()
+#scene.next_level()
+#scene.next_level()
+#===============================#
+#Pilih Senjata Yang Anda Suka
+# 1.Mine
+# 2.Bomb
+player = Player(scene,Mine())
+#player = Player(scene, Bomb())
 game_controller = GameController(player)
 
 running = True
